@@ -1,10 +1,17 @@
 [gd_scene format=3 uid="uid://cla2vxs73lq6u"]
 
+[ext_resource type="Texture2D" uid="uid://c3ihyqd57yu3y" path="res://assets/images/gato.jpg" id="1_xqhig"]
+
 [sub_resource type="BoxMesh" id="BoxMesh_k1y2x"]
 
 [node name="Node2D" type="Node2D" unique_id=1069545087]
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="." unique_id=1880488124]
-position = Vector2(380, 255)
-scale = Vector2(-385.64987, -562.11926)
+position = Vector2(283, 313.00003)
+scale = Vector2(-507.42636, -608.0061)
 mesh = SubResource("BoxMesh_k1y2x")
+texture = ExtResource("1_xqhig")
+
+[node name="Gato" type="Sprite2D" parent="." unique_id=713737702]
+position = Vector2(935, 291)
+texture = ExtResource("1_xqhig")
