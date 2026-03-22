@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://c5ld6i6vwd1d6"]
+
+[ext_resource type="Script" uid="uid://ofk8v5qpd63s" path="res://scripts/path_follow_2d.gd" id="1_k7rdn"]
+[ext_resource type="PackedScene" uid="uid://cla2vxs73lq6u" path="res://Scenes/prueba2d.tscn" id="2_4vuqg"]
+
+[node name="PathFollow2D" type="PathFollow2D" unique_id=1916832413]
+rotation = 0.004854331
+rotates = false
+script = ExtResource("1_k7rdn")
+
+[node name="slime" parent="." unique_id=1894310580 instance=ExtResource("2_4vuqg")]
+position = Vector2(-3.708252, -31.036243)
+rotation = 0.009404111
