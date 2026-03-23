@@ -228,7 +228,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_15sig"]
-size = Vector2(61, 84)
+size = Vector2(56, 79)
 
 [node name="knigth" type="CharacterBody2D" unique_id=1330800293 groups=["jugador"]]
 script = ExtResource("1_15sig")
@@ -242,7 +242,7 @@ frame_progress = 0.3472174
 [node name="Hurtbox" type="Area2D" parent="." unique_id=1920227515]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox" unique_id=1530360631]
-position = Vector2(0, 11)
+position = Vector2(0, 10.5)
 shape = SubResource("RectangleShape2D_15sig")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1510030674]

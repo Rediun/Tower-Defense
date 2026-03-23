@@ -3,6 +3,9 @@
 [ext_resource type="Texture2D" uid="uid://dsoewanhw7abo" path="res://assets/sprites/characters/player.png" id="1_ow4ev"]
 [ext_resource type="Script" uid="uid://n03umijyadjy" path="res://scripts/tower_1.gd" id="1_qcyrs"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6oi5k"]
+size = Vector2(10.375, 4.125)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_qcyrs"]
 atlas = ExtResource("1_ow4ev")
 region = Rect2(0, 288, 48, 48)
@@ -202,24 +205,30 @@ radius = 17.257244
 size = Vector2(29.125, 10.375)
 
 [node name="Tower1" type="CharacterBody2D" unique_id=1348650325]
+position = Vector2(0, 5)
 scale = Vector2(4, 4)
 script = ExtResource("1_qcyrs")
 
+[node name="Colision" type="CollisionShape2D" parent="." unique_id=945031684]
+position = Vector2(-0.25, -1.75)
+shape = SubResource("RectangleShape2D_6oi5k")
+
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1773093346]
+position = Vector2(-0.75, -17.5)
 sprite_frames = SubResource("SpriteFrames_mqa3d")
-animation = &"Right_attack"
-frame_progress = 0.4893076
+animation = &"idle_espadachin"
+frame_progress = 0.22442387
 
 [node name="RangoDetect" type="Area2D" parent="." unique_id=1549916795]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RangoDetect" unique_id=804279179]
-position = Vector2(0.5, 9.75)
+position = Vector2(-0.0625, -7.25)
 shape = SubResource("CircleShape2D_ow4ev")
 
 [node name="Hitbox" type="Area2D" parent="." unique_id=1160075358]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" unique_id=1593309093]
-position = Vector2(1.8125, 13.8125)
+position = Vector2(1.25, -3.1875)
 shape = SubResource("RectangleShape2D_qcyrs")
 disabled = true
 

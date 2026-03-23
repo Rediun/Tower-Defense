@@ -174,7 +174,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ritx1"]
-size = Vector2(56, 59)
+size = Vector2(56, 57.5)
 
 [node name="Slime" type="CharacterBody2D" unique_id=1894310580 groups=["enemigos"]]
 script = ExtResource("1_ritx1")
@@ -185,5 +185,5 @@ sprite_frames = SubResource("SpriteFrames_2pult")
 animation = &"Gethit"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=748835561]
-position = Vector2(-1, 18)
+position = Vector2(-1, 17.25)
 shape = SubResource("RectangleShape2D_ritx1")
