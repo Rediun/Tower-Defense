@@ -1,0 +1,22 @@
+
+- el grid de los tilemaps sera de 32x32
+
+cafe del B (tile/){
+    version: 1
+    Incluye:
+    - piso de concreto
+    - piso de terracota
+    - cesped
+    - banca de 4 sillas
+    - pilar de acero
+    - arbusto
+    -cafeteria completa
+
+    //el pilar es de 1grid x 2grid
+    //el banco4 es de 2grid x 1grid
+    //la cafeteria es de 4grid x 4grid
+}
+sobreCetiA(/){
+    version: 1
+    //de momento solo es un sobre (conformate)
+}
